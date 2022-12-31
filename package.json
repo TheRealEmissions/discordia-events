@@ -1,0 +1,17 @@
+{
+  "name": "ts-modular-bot-addon-events",
+  "version": "1.0.0",
+  "description": "Events addon for Modular Bot Series",
+  "main": "out/index.js",
+  "types": "types/events/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emissions#2565",
+  "license": "ISC",
+  "dependencies": {
+    "ts-modular-bot-file-design": "github:therealemissions/ts-modular-bot-file-design",
+    "ts-modular-bot-types": "github:therealemissions/ts-modular-bot-types"
+  },
+  "type": "module"
+}
