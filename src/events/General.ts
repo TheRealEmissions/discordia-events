@@ -23,6 +23,11 @@ class GeneralEvents {
   static error(message: string, ...args: string[]) {
     Logger.internalError(message, "ERROR", ...args);
   }
+
+  @Decorators.bind(GeneralEventsEnum.USER_ERROR, EventTypes.ON)
+  static userError(message: string, ...args: string[]) {
+    Logger.userError(message, "USER ERROR", ...args);
+  }
 }
 
 export default GeneralEvents;

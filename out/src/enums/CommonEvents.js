@@ -4,6 +4,7 @@ export var GeneralEvents;
     GeneralEvents["ERROR"] = "error";
     GeneralEvents["WARN"] = "warn";
     GeneralEvents["INFO"] = "info";
+    GeneralEvents["USER_ERROR"] = "user-error";
 })(GeneralEvents || (GeneralEvents = {}));
 export var DiscordEvents;
 (function (DiscordEvents) {

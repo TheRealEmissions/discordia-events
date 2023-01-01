@@ -21,6 +21,9 @@ class GeneralEvents {
     static error(message, ...args) {
         Logger.internalError(message, "ERROR", ...args);
     }
+    static userError(message, ...args) {
+        Logger.userError(message, "USER ERROR", ...args);
+    }
 }
 __decorate([
     Decorators.bind(GeneralEventsEnum.INFO, EventTypes.ON)
@@ -34,4 +37,7 @@ __decorate([
 __decorate([
     Decorators.bind(GeneralEventsEnum.ERROR, EventTypes.ON)
 ], GeneralEvents, "error", null);
+__decorate([
+    Decorators.bind(GeneralEventsEnum.USER_ERROR, EventTypes.ON)
+], GeneralEvents, "userError", null);
 export default GeneralEvents;
