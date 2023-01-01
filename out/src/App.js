@@ -34,6 +34,22 @@ class App extends BaseApp {
             }
         };
     }
+    bind(eventName, type = EventTypes.ON) {
+        return (target, propertyKey, descriptor) => {
+            switch (type) {
+                case EventTypes.ON:
+                    BaseApp.events.on(eventName, (...args) => {
+                        descriptor.value(...args);
+                    });
+                    break;
+                case EventTypes.ONCE:
+                    BaseApp.events.once(eventName, (...args) => {
+                        descriptor.value(...args);
+                    });
+                    break;
+            }
+        };
+    }
 }
 __decorate([
     App.bind(GeneralEvents.INFO, EventTypes.ON)
