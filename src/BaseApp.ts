@@ -25,6 +25,11 @@ abstract class BaseApp extends HeadFile {
   getEventEmitter() {
     return BaseApp.events;
   }
+
+  abstract bind(
+    eventName: GeneralEvents | DiscordEvents | string,
+    type: EventTypes
+  ): (target: any, propertyKey: string, descriptor: PropertyDescriptor) => void;
 }
 
 export default BaseApp;
