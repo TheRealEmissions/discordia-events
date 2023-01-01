@@ -10,6 +10,7 @@
   "author": "Emissions#2565",
   "license": "ISC",
   "dependencies": {
+    "ts-logger": "github:therealemissions/ts-logger",
     "ts-modular-bot-file-design": "github:therealemissions/ts-modular-bot-file-design",
     "ts-modular-bot-types": "github:therealemissions/ts-modular-bot-types"
   },

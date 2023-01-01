@@ -8,10 +8,10 @@ class App extends BaseApp {
     super();
   }
 
-  @App.bind(GeneralEvents.INFO, EventTypes.ON)
-  info(message: string) {
-    console.debug("EVENTS => INFO => ", message);
-  }
+  // @App.bind(GeneralEvents.INFO, EventTypes.ON)
+  // info(message: string) {
+  //   console.debug("EVENTS => INFO => ", message);
+  // }
 
   init() {
     BaseApp.events.emit(GeneralEvents.INFO, "Events loaded");
