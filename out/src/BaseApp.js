@@ -2,6 +2,7 @@ import { HeadFile } from "ts-modular-bot-file-design";
 import { Dependency } from "ts-modular-bot-types";
 import { GeneralEvents, DiscordEvents } from "./enums/CommonEvents.js";
 import { EventEmitter } from "node:events";
+import { EventTypes } from "./enums/EventTypes.js";
 class BaseApp extends HeadFile {
     constructor() {
         super();
@@ -11,6 +12,7 @@ class BaseApp extends HeadFile {
     load = true;
     GeneralEvents = GeneralEvents;
     DiscordEvents = DiscordEvents;
+    EventTypes = EventTypes;
     static events = new EventEmitter();
     getDependencies() {
         return [];
