@@ -19,6 +19,10 @@ abstract class BaseApp extends HeadFile {
   getDependencies(): Dependency[] {
     return [];
   }
+
+  getEventEmitter() {
+    return BaseApp.events;
+  }
 }
 
 export default BaseApp;
