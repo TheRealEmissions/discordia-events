@@ -38,6 +38,7 @@ export var DiscordEvents;
     DiscordEvents["GUILD_UNAVAILABLE"] = "guildUnavailable";
     DiscordEvents["GUILD_UPDATE"] = "guildUpdate";
     DiscordEvents["INTERACTION_CREATE"] = "interactionCreate";
+    DiscordEvents["INVALIDATED"] = "invalidated";
     DiscordEvents["INVITE_CREATE"] = "inviteCreate";
     DiscordEvents["INVITE_DELETE"] = "inviteDelete";
     DiscordEvents["MESSAGE_CREATE"] = "messageCreate";
