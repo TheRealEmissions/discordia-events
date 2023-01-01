@@ -28,12 +28,12 @@ class App extends BaseApp {
     ) => {
       switch (type) {
         case EventTypes.ON:
-          BaseApp.events.on(eventName, (...args: any[]) => {
+          this.events.on(eventName, (...args: any[]) => {
             descriptor.value(...args);
           });
           break;
         case EventTypes.ONCE:
-          BaseApp.events.once(eventName, (...args: any[]) => {
+          this.events.once(eventName, (...args: any[]) => {
             descriptor.value(...args);
           });
           break;
