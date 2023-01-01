@@ -15,5 +15,8 @@ class BaseApp extends HeadFile {
     getDependencies() {
         return [];
     }
+    getEventEmitter() {
+        return BaseApp.events;
+    }
 }
 export default BaseApp;
