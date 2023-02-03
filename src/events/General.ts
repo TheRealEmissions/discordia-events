@@ -2,7 +2,7 @@ import Decorators from "../Decorators.js";
 import { GeneralEvents as GeneralEventsEnum } from "../enums/CommonEvents.js";
 import { EventTypes } from "../enums/EventTypes.js";
 import Logger from "ts-logger";
-import { SettingsConfig } from "../../config/Settings.js";
+import { SettingsConfig } from "../../config/internal/Settings.js";
 
 class GeneralEvents {
   @Decorators.bind(GeneralEventsEnum.INFO, EventTypes.ON)

@@ -1,18 +1,24 @@
 {
-  "name": "ts-modular-bot-addon-events",
+  "name": "discordia-events",
   "version": "1.0.0",
-  "description": "Events addon for Modular Bot Series",
+  "description": "Events addon for Discordia",
   "main": "out/index.js",
   "types": "types/events/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx tsc && copyfiles -u 1 config/*.yml out/config"
   },
   "author": "Emissions#2565",
   "license": "ISC",
   "dependencies": {
+    "fs-extra-promise": "^1.0.1",
     "ts-logger": "github:therealemissions/ts-logger",
     "ts-modular-bot-file-design": "github:therealemissions/ts-modular-bot-file-design",
-    "ts-modular-bot-types": "github:therealemissions/ts-modular-bot-types"
+    "ts-modular-bot-types": "github:therealemissions/ts-modular-bot-types",
+    "yaml": "^2.2.1"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
 }

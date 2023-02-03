@@ -1,0 +1,13 @@
+# -------------------------
+#
+# TOGGLE LOGS IN CONSOLE
+#
+# To disable a particular type of log, simply set it to false
+#
+# -------------------------
+toggles:
+  info: true
+  debug: true
+  warn: true
+  error: true
+  userError: true
