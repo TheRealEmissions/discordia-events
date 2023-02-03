@@ -1,10 +1,10 @@
-import { HeadFile } from "ts-modular-bot-file-design";
+import Base from "ts-modular-bot-file-design";
 import { Dependency } from "ts-modular-bot-types";
 import { GeneralEvents, DiscordEvents } from "./enums/CommonEvents.js";
 import { EventEmitter } from "node:events";
 import { EventTypes } from "./enums/EventTypes.js";
 
-abstract class BaseApp extends HeadFile {
+abstract class BaseApp extends Base {
   constructor() {
     super();
   }
@@ -17,7 +17,7 @@ abstract class BaseApp extends HeadFile {
   EventTypes = EventTypes;
   static events = new EventEmitter();
 
-  abstract init(): void;
+  abstract init(): Promise<void>;
   getDependencies(): Dependency[] {
     return [];
   }
