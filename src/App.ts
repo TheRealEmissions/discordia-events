@@ -16,7 +16,7 @@ class App extends BaseApp {
   //   console.debug("EVENTS => INFO => ", message);
   // }
 
-  init() {
+  async init() {
     BaseApp.events.emit(GeneralEvents.INFO, "Events loaded");
   }
 
