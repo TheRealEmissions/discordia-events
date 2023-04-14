@@ -20,8 +20,8 @@ class App extends BaseApp {
     BaseApp.events.emit(GeneralEvents.INFO, "Events loaded");
   }
 
-  bind(
-    eventName: GeneralEvents | DiscordEvents | string,
+  bind<T extends string>(
+    eventName: GeneralEvents | DiscordEvents | T,
     type: EventTypes = EventTypes.ON
   ) {
     return (

@@ -3,8 +3,8 @@ import { GeneralEvents, DiscordEvents } from "./enums/CommonEvents.js";
 import { EventTypes } from "./enums/EventTypes.js";
 
 class Decorators {
-  static bind(
-    eventName: GeneralEvents | DiscordEvents | string,
+  static bind<T extends string>(
+    eventName: GeneralEvents | DiscordEvents | T,
     type: EventTypes = EventTypes.ON
   ) {
     return (
