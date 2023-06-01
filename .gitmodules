@@ -1,0 +1,4 @@
+[submodule "types"]
+	path = types
+	url = https://github.com/therealemissions/discordia-events-types.git
+	branch = ada
